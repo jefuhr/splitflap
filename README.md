@@ -5,7 +5,11 @@ station. Zero dependencies, no build step, about 6 kB of source.
 
 ![the demo board](docs/screenshot.png)
 
-Live demo: open [`docs/index.html`](docs/index.html) in a browser, or run `npm run demo`.
+**Live demo: [jefuhr.github.io/splitflap](https://jefuhr.github.io/splitflap/)** — or run `npm run demo`.
+
+That page is [`docs/index.html`](docs/index.html), built by `npm run build` and deployed by
+[the Pages workflow](.github/workflows/pages.yml) on every push to `main`. The workflow runs the
+tests first and refuses to publish a `docs/index.html` that has drifted from `src/`.
 
 ## Why it flips the way it does
 
